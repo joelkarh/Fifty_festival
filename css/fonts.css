@@ -15,6 +15,9 @@
 .lineup h2,
 .date,
 .lunch-medium,
+.button,
+.register h2,
+.submit,
 .marquee{
     font-family: 'LunchType-Medium', sans-serif;
 }

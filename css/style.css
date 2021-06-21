@@ -126,11 +126,11 @@ position:relative;
 z-index: 2;
 }
 .day-1 {
-    background-color: #00B290;
+    background-color:  #FF74A7;
 }
 
 .day-2 {
-    background-color: #FF74A7;
+    background-color: #00B290;
 }
 
 .day-3 {
@@ -150,6 +150,7 @@ z-index: 2;
 .day {
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .lineup h2 {
@@ -166,7 +167,11 @@ z-index: 2;
     position: absolute;
 }
 
+
+
+
 .circle {
+    
     height: 93px;
     width: 93px;
     background-color: #ffeecf;
@@ -262,4 +267,40 @@ z-index: 2;
 .squiggle:nth-of-type(8) {
     right: 0%;
     bottom: 5%;
+}
+
+.scroll-to {
+    position:absolute;
+    width: 64px;
+    height: 32px;
+    left: 50%;
+    bottom: 3vh;
+    background-image: url('/assets/images/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translateX(-50%);
+}
+
+@media(max-width:640px){
+    .marquee{
+        position: relative;
+        top: auto;
+        left:auto;
+        width:  90vw;
+        margin-bottom: 24px;
+    }
+    .logo{
+        max-width: 64px;
+        margin-bottom: 24px;
+    }
+    .intro p{
+        font-size: 20px;
+    }
+    .scroll-to{
+        display:none;
+    }
+    .lineup{
+        font-size: 30px;
+    }
 }

@@ -1,0 +1,20 @@
+/* We are running our viewport transitions only on wider 
+screens so that we have more confidance they will run properly (fade/scroll 
+linked transitions on mobile van be patchy)
+ */
+@media (min-width: 640px ){
+    .shape,
+    .lineup li,
+    .date{
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        transition-delay: 1s;
+    }
+    .in-viewport .shape,
+    .in-viewport .lineup li,
+    .in-viewport .date{
+        opacity: 1;
+    }
+    
+    
+}
