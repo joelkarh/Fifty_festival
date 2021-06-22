@@ -23,10 +23,14 @@
     margin: 48px 24px;
 }
 
+
 input{
     background: none;
     border:none;
     font-size: 1.16rem;
+    /* makes sure the  blue line in your inputform is gone */
+    outline: none ;
+    -webkit-appearance: none;
 }
 /* this will tell our input to stretch out and fill the available space */
 .email-input{
